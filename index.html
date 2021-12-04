@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="Description"
+      content="This is a portfolio website that was created by Marin Jursic"
+    />
+    <title>Document</title>
+    <link rel="stylesheet" href="test.css" />
+    <script
+      src="https://kit.fontawesome.com/f0f0659441.js"
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript">
+      $(window).on("scroll", function () {
+        if ($(window).scrollTop() > 150) {
+          $(".header").addClass("active");
+          $(".scroll-down").addClass("hidden");
+          $(".gotopbtn").addClass("visible");
+        } else {
+          //remove the background property so it comes transparent again (defined in your css)
+          $(".header").removeClass("active");
+          $(".scroll-down").removeClass("hidden");
+          $(".gotopbtn").removeClass("visible");
+        }
+      });
+    </script>
+  </head>
+  <body>
+    <script>
+      function timeFunction() {
+        setTimeout(function () {
+          alert("After 5 seconds!");
+        }, 5000);
+      }
+    </script>
+    <section class="landing">
+      <div class="header" className="heading">
+        <nav class="navbar">
+          <h2><a href="#">Marin</a></h2>
+          <ul class="buttons">
+            <li><a href="#" aria-label="home">Home</a></li>
+            <li><a href="#about" aria-label="about">About</a></li>
+            <li><a href="#skill" aria-label="skills">Skills</a></li>
+            <li><a href="#projects" aria-label="projects">Projects</a></li>
+            <li><a href="#contact" aria-label="contact">Contact</a></li>
+          </ul>
+          <ul class="socials">
+            <li>
+              <a href="#" title="Github" aria-label="github"
+                ><img src="/images/github.png" alt="github"
+              /></a>
+            </li>
+            <li>
+              <a href="#" title="LinkedIn" aria-label="linkedin"
+                ><img src="/images/linkedin.png" alt="linkedin"
+              /></a>
+            </li>
+            <li>
+              <a href="#" title="Email" aria-label="email"
+                ><img src="/images/mail.png" alt="email"
+              /></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <section class="home">
+        <h1><span class="type"></span></h1>
+      </section>
+      <a href="#about" aria-label="about">
+        <div class="scroll-down"></div>
+      </a>
+    </section>
+    <script src="js/typed.min.js"></script>
+    <script>
+      var typed = new Typed(".type", {
+        strings: ["Hi, I'm Marin Jursic", "Let's work together"],
+        typeSpeed: 70,
+        backSpeed: 60,
+        loop: true,
+      });
+    </script>
+    <section class="about" id="about">
+      <div class="split">
+        <div>
+          <img src="/images/ComputerTyping.svg" alt="About me image" />
+        </div>
+        <div>
+          <h1>About Me</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
+            tempora magnam omnis eius iusto saepe temporibus laboriosam nisi,
+            sapiente aspernatur non numquam eligendi voluptatem earum maiores.
+            Itaque ea velit excepturi!
+          </p>
+          <div class="btn">
+            <a href="#projects">See Portfolio</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="skill" id="skill">
+      <div class="title">
+        <h1>My Skills</h1>
+        <p>These are some of my skills that I've learned over the years</p>
+      </div>
+      <div class="content">
+        <div class="box">
+          <img src="images/python.png" alt="python" />
+          <h2>Python</h2>
+        </div>
+        <div class="box">
+          <img src="images/css.png" alt="css" />
+          <h2>CSS</h2>
+        </div>
+        <div class="box">
+          <img src="images/html.png" alt="html" />
+          <h2>HTML</h2>
+        </div>
+        <div class="box">
+          <img src="images/javascript.png" alt="javascript" />
+          <h2>Javascript</h2>
+        </div>
+      </div>
+      <div class="content">
+        <div class="box">
+          <img src="images/php.png" alt="php" />
+          <h2>PHP</h2>
+        </div>
+        <div class="box">
+          <img src="images/mysql.png" alt="mySql" />
+          <h2>MySQL</h2>
+        </div>
+        <div class="box">
+          <img src="images/java.png" alt="java" />
+          <h2>Java</h2>
+        </div>
+        <div class="box">
+          <img src="images/react.png" alt="react" />
+          <h2>React</h2>
+        </div>
+      </div>
+    </section>
+    <section class="projects" id="projects">
+      <div class="title">
+        <h1>Projects</h1>
+        <p>Here are a few projects that I've worked on recently</p>
+      </div>
+      <div class="projectsLine">
+        <div class="projectBox">
+          <img src="images/headphones.png" alt="Project1" />
+        </div>
+        <div class="projectBox">
+          <img src="images/player.png" alt="Project2" />
+        </div>
+        <div class="projectBox">
+          <img
+            src="images/carlos-muza-hpjSkU2UYSU-unsplash.png"
+            alt="Project3"
+          />
+        </div>
+      </div>
+      <div class="projectsLine">
+        <div class="projectBox">
+          <img
+            src="images/mika-baumeister-Zk4QPB3-5NY-unsplash.png"
+            alt="Project4"
+          />
+        </div>
+        <div class="projectBox">
+          <img
+            src="/images/michael-dziedzic-dvHkp6FzfIM-unsplash.png"
+            alt="Project5"
+          />
+        </div>
+        <div class="projectBox">
+          <img
+            src="/images/alexander-shatov-mr4JG4SYOF8-unsplash (1).png"
+            alt="Project6"
+          />
+        </div>
+      </div>
+    </section>
+    <section class="contact" id="contact">
+      <div class="contactTitle">
+        <h1>Contact Me</h1>
+        <p>
+          If you have any questions, send me a message and I'll be glad to
+          respond!
+        </p>
+      </div>
+      <div class="contactBox">
+        <div class="image">
+          <img src="images/e.png" alt="contact image" />
+        </div>
+        <div class="inputs">
+          <ul class="contactList">
+            <li><input type="text" placeholder="First Name" required /></li>
+            <li><input type="text" placeholder="Last Name" required /></li>
+            <li><input type="email" placeholder="Email Address" required /></li>
+            <li class="area">
+              <textarea
+                name="Message"
+                id=""
+                cols="30"
+                rows="10"
+                placeholder="Your Message..."
+                required
+              ></textarea>
+            </li>
+            <li class="submit"><a href="#">Send Message</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <a href="#" class="gotopbtn" aria-label="goToTop"
+      ><i class="fas fa-arrow-up"></i>
+    </a>
+    <footer>
+      <h2>© Copyright 2021</h2>
+    </footer>
+  </body>
+</html>
